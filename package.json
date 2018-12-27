@@ -1,0 +1,41 @@
+{
+  "name": "money-management",
+  "version": "0.1.0",
+  "description": "资金管理系统，用于管理各个系统之间的资金管理流程。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "jfet build -w & jfet server -l -c public",
+    "build:dev": "BUILD_ENV=production NODE_ENV=dev jfet build",
+    "build:test": "BUILD_ENV=production NODE_ENV=test jfet build",
+    "build:pre": "BUILD_ENV=production NODE_ENV=pre jfet build",
+    "build:prod": "BUILD_ENV=production NODE_ENV=production jfet build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zhiqing.zhong@yunjiaplus.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@jyb/eslint-config-jyb": "^1.0.1",
+    "eslint": "^4.7.1",
+    "eslint-plugin-vue": "^4.5.0",
+    "fs-extra": "^5.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.2.1",
+    "file-saver": "^1.3.8",
+    "font-awesome": "^4.7.0",
+    "js-cookie": "^2.2.0",
+    "js-md5": "^0.7.3",
+    "moment": "^2.22.2",
+    "nprogress": "^0.2.0",
+    "numbro": "^2.1.0",
+    "numeral": "^2.0.6",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.12.12"
+  }
+}

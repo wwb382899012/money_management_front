@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "@jyb/eslint-config-jyb",
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "vue/html-self-closing": "off",
+    "import/no-unresolved": 0,
+    "import/no-unassigned-import": 0,
+    "comma-dangle": "off",
+    "no-plusplus": "off",
+    "prefer-rest-params": "off",
+    "no-console": "off",
+    "class-methods-use-this": "off",
+    "quotes": ["error", "single"]
+  },
+  "env": {
+    "browser": true
+  }
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>中智诚集团资金管理系统</title>
+  <meta name="keywords" content="中智诚集团，资金管理系统">
+  <meta name="description" content="中智诚集团资金管理系统">
+  <meta name="render" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+    .app-loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999999
+    }
+
+    .app-loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FFF;
+      -webkit-animation: spin 2s linear infinite;
+      -ms-animation: spin 2s linear infinite;
+      -moz-animation: spin 2s linear infinite;
+      -o-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      z-index: 1001
+    }
+
+    .app-loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FFF;
+      -webkit-animation: spin 3s linear infinite;
+      -moz-animation: spin 3s linear infinite;
+      -o-animation: spin 3s linear infinite;
+      -ms-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite
+    }
+
+    .app-loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FFF;
+      -moz-animation: spin 1.5s linear infinite;
+      -o-animation: spin 1.5s linear infinite;
+      -ms-animation: spin 1.5s linear infinite;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .app-loader-wrapper .loader-section {
+      position: fixed;
+      top: 0;
+      width: 51%;
+      height: 100%;
+      background: #324157;
+      z-index: 1000;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0)
+    }
+
+    .app-loader-wrapper .loader-section.section-left {
+      left: 0
+    }
+
+    .app-loader-wrapper .loader-section.section-right {
+      right: 0
+    }
+
+    .app-loader-wrapper .load_title {
+      font-family: 'Open Sans';
+      color: #FFF;
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+      z-index: 9999999999999;
+      position: absolute;
+      top: 50%;
+      margin-top: 150px;
+      opacity: 1;
+      line-height: 30px
+    }
+
+    .app-loader-wrapper .load_title span {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 13px;
+      color: #FFF;
+      opacity: .5
+    }
+  </style>
+  <link rel="stylesheet" href="/css/index.css" media="none" onload="if(media!='all')media='all'">   <link rel="stylesheet" href="/css/index.vue.css" media="none" onload="if(media!='all')media='all'">  <script>
+  window.g_config = {};
+</script>
+</head>
+
+<body>
+  <div class="app-loader-wrapper">
+    <div class="app-loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在加载中智诚资金管理系统</div>
+  </div>
+  <div id="app"></div>
+ 
+  <script src="/js/index.js"></script> 
+  <script>
+    window.onload = function () {
+      document.getElementsByClassName('app-loader-wrapper')[0].style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>
